@@ -53,4 +53,34 @@ table {
 
 /* END RESET */
 
+img {
+	width:175px;
+	height:auto;
+	float:left;
+	margin:0px 20px 20px 0px;
+}
 
+article {
+	width: 475px;
+	float:left;
+	margin:200px 0px 25px 80px;
+}
+
+body {font-family: Helvetica;
+}
+
+h1 {font-size: 30px;
+	font-weight: bold;
+}
+
+h2 {font-size: 12px;
+	color: gray;
+	margin: 10px;
+}
+
+p {margin:0px 0px 12px 0px;
+}
+
+
+
+</style>
