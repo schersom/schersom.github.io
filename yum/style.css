@@ -54,4 +54,38 @@ table {
 /* END RESET */
 
 /*testing*/
-h1{color:purple;}
+header {float:left;
+		width: 100%;
+}
+
+body{text-decoration: none;
+	font-size: 12pt;
+	font-family: Gill Sans;
+	font-weight: lighter;
+}
+
+h1{	font-family: Clarendon;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+h2 {font-family: Clarendon;
+	font-weight: bolder;
+	font-size: 10.5pt;
+}
+
+em {font-family:Gill Sans;
+	font-weight: bolder;}
+
+section {	float: left;
+			width: 200px;
+			margin: 10px 0px 0px 0px;
+}
+
+a {text-decoration: none;
+	margin: 10px;}
+
+nav {float:left;
+	width:100%;
+	margin: 50px 0px 0px 0px;
+}
