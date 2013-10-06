@@ -82,16 +82,19 @@ html[xmlns] .clearfix { display: block; }
  height:100px;  
  background:url(images/dogvscat-logo.gif) no-repeat top left; 
  text-indent:-9999px;
+ margin-left:10px;
  }
 
 body {
 	font-family:Georgia;
 	color: black;
+	margin: 20px 30px auto 30px;
 }
 
 article {
 	float:left;
 	width:300 px 300px;
+	margin: 10px;
 }
 
 li {float:left;
@@ -107,20 +110,26 @@ a {text-decoration:none;
 img {width:300px;
 	height:auto;
 	float:left;
-	margin: 10px;
+	margin-bottom: 10px; 
  }
 
 h3 {font-weight: bold;
-	font-size: 14pt;
+	font-size: 14pt
 }
 
 p {	float: left;
 	width: 300px;
 	font-size: 12pt;
-	margin: 20px;
+	margin: 5px 0px 0px 0px;
 }
 
 footer {
  	float:left;
  	margin:50px 0px 0px 0px;
  }
+
+ .footL{text-transform: lowercase;
+ 		text-align: left;}
+
+ .footR{text-transform: lowercase;
+ 		text-align: right;}
