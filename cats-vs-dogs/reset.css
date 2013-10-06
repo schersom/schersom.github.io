@@ -54,7 +54,7 @@ table {
 /* Center Content */
 
 .centered { 
-  margin:0 auto;
+  margin: 0 auto;
   width:960px;
 }
 
@@ -74,3 +74,53 @@ html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
 
+/* END RESET*/
+
+#site-logo a {
+ display:block;  
+ width:300px; 
+ height:100px;  
+ background:url(images/dogvscat-logo.gif) no-repeat top left; 
+ text-indent:-9999px;
+ }
+
+body {
+	font-family:Georgia;
+	color: black;
+}
+
+article {
+	float:left;
+	width:300 px 300px;
+}
+
+li {float:left;
+	text-transform: uppercase;
+	margin:10px;
+}
+
+a {text-decoration:none;
+	font-weight: bold;
+	color: black;
+}
+
+img {width:300px;
+	height:auto;
+	float:left;
+	margin: 10px;
+ }
+
+h3 {font-weight: bold;
+	font-size: 14pt;
+}
+
+p {	float: left;
+	width: 300px;
+	font-size: 12pt;
+	margin: 20px;
+}
+
+footer {
+ 	float:left;
+ 	margin:50px 0px 0px 0px;
+ }
