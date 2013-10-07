@@ -91,6 +91,10 @@ body {
 	margin: 20px 30px auto 30px;
 }
 
+hr {border:none;
+	height: 3px;
+	background-color: black;}
+
 article {
 	float:left;
 	width:300 px 300px;
