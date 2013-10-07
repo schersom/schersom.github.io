@@ -34,9 +34,11 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
@@ -55,7 +57,7 @@ table {
 
 .centered { 
   margin: 0 auto;
-  width:960px;
+  width: 960px;
 }
 
 
@@ -89,11 +91,13 @@ body {
 	font-family:Georgia;
 	color: black;
 	margin: 20px 30px auto 30px;
+	line-height: 1.25;
 }
 
 hr {border:none;
 	height: 3px;
-	background-color: black;}
+	background-color: black;
+	clear:both;}
 
 article {
 	float:left;
@@ -103,7 +107,7 @@ article {
 
 li {float:left;
 	text-transform: uppercase;
-	margin:10px;
+	margin:0px 10px 10px 10px;
 }
 
 a {text-decoration:none;
@@ -130,6 +134,7 @@ p {	float: left;
 footer {
  	float:left;
  	margin:50px 0px 0px 0px;
+ 	clear:both;
  }
 
  .footL{text-transform: lowercase;
