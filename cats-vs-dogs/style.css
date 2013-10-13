@@ -54,7 +54,8 @@ table {
 
 
 /* Center Content */
-
+	margin:0 auto;
+	width:100%;
 
 
 /* Clearfix */
@@ -84,32 +85,32 @@ html[xmlns] .clearfix { display: block; }
 
 body {
 	font-family:Georgia;
-	color: black;
 	line-height: 1.25;
 	margin:0 auto;
 	width:100%;
+	display:block;
 }
 
 header {
-	margin:2%;
+	margin-top:2%;	
+	width:100%;
+}
+
+#nav {
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	clear:both;
+	margin-top:2%;
+	margin:0 auto;
+	width:100%;
+	height:20px;
+	display:block;
 }
 
 hr {border:none;
 	height: 3px;
 	background-color: black;
-	clear:both;}
-
-article {
-	float:left;
-	width:45%;
-	margin:0 auto;
-/*
-	margin: 0% 2% 2% 2%;
-	*/
-}
-
-ul {
-
+	width:100%;
 }
 
 li {float:left;
@@ -122,33 +123,47 @@ a {text-decoration:none;
 	color: black;
 }
 
-img {width:100%;
-	height:auto;
+section {
+	width:100%;
+}
+
+article {
+	display: block;
 	float:left;
-	margin-bottom: 2%; 
- }
-
-h3 {font-weight: bold;
-	font-size: 14pt
+	width:45%;
+	margin:2.5%
 }
 
-p {	float: left;
-	width: 100%;
-	font-size: 12pt;
+	img {width:100%;
+		height:auto;
+		float:left;
+		margin-bottom: 2%; 
+ 	}
 
-	/*
-	margin: 5px 0px 0px 0px;
-	*/
-}
+	h3 {font-weight: bold;
+		font-size: 14pt
+	}
+
+	p {	float: left;
+		width: 100%;
+		font-size: 12pt;
+	}
 
 footer {
- 	float:left;
- 	margin:10px 0px 0px 0px;
- 	clear:both;
- }
+	font-size: 10px;
+}
 
- .footL{text-transform: lowercase;
+
+em {color:red;
+}
+
+ .footL {
+ 		float:left;
+ 		text-transform: lowercase;
  		text-align: left;}
 
- .footR{text-transform: lowercase;
- 		text-align: right;}
+ .footR{
+ 		float:left;
+ 		text-transform: lowercase;
+ 		text-align: right;
+ 	}
