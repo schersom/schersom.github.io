@@ -50,3 +50,16 @@ table {
 	border-spacing: 0;
 }
 
+/* end reset*/
+
+#site-wrapper {
+	width:100%;
+	background-color:#CCFFCC;
+}
+
+#site-header h1 a {
+ display:block;  
+ width:300px; 
+ height:120px;  
+ background:url(images/logo.png) no-repeat top left; 
+ text-indent:-9999px;
