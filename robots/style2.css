@@ -64,19 +64,25 @@ body{
 	background-color:lightyellow;
 }
 
-#site-header h1 a {
- 	display:block;  
- 	width:300px; 
- 	height:120px;  
- 	background:url(images/logo.png) no-repeat top left; 
- 	text-indent:-9999px;
- 	margin-left:20%;
+#site-header {
+	width:60%;
+	margin:0 auto;
 }
 
-#top-nav {
+	#site-header h1 a {
+	 	display:block;  
+	 	width:300px; 
+	 	height:120px;  
+	 	background:url(images/logo.png) no-repeat top left; 
+	 	text-indent:-9999px;
+		}
+
+#site-header #top-nav {
+	width:60%;
+	margin:0 auto;
 	position:absolute;
-	right:20%;
 	top:10px;
+	text-align:right;
 }
 
 	#top-nav a{
