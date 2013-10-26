@@ -93,13 +93,13 @@ header {
 	width:100%;
 	background:url(images/dogvscat-logo.gif) no-repeat top center; 
  	text-indent:-9999px;
-	}
+}
 
 	#site-logo a{
  		display:block;  
  		width:600px; 
 		height:100px;  
-		}
+	}
 
 #nav {
 	position:absolute;
@@ -117,12 +117,12 @@ header {
 	li {display:inline-block;
 		text-transform: uppercase;
 		margin:0px 10px 10px 10px;
-		}
+	}
 
 	a {text-decoration:none;
 		font-weight: bold;
 		color: black;
-		}
+	}
 
 hr {border:none;
 	height: 3px;
@@ -132,8 +132,9 @@ hr {border:none;
 
 section {
 	position:relative;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
 	width:100%;
-	top:15px;
 }
 
 article {
@@ -163,16 +164,19 @@ footer {
 }
 
 
-em {color:red;
+footer a {
+	text-decoration:none;
+	color: red;
 }
 
- .footL {
+	.footL {
  		float:left;
  		margin-left:2.5%;
  		text-transform: lowercase;
- 		text-align: left;}
+ 		text-align: left;
+ 	}
 
- .footR{
+	.footR{
  		float:right;
  		margin-right:2.5%;
  		text-transform: lowercase;
