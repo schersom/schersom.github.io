@@ -53,20 +53,22 @@ table {
 
 /* END RESET */
 
-img {
-	width:175px;
-	height:auto;
-	float:left;
-	margin:0px 20px 20px 0px;
+body {
+	font-family: Helvetica;
+	width:100%;
 }
 
 article {
-	width: 475px;
+	width: 40%;
 	float:left;
-	margin:200px 0px 25px 80px;
+	margin-top:2.5%;
+	margin-left:6%;
 }
 
-body {font-family: Helvetica;
+img {
+	width:40%;
+	float:left;
+	margin-right: 20px;
 }
 
 h1 {font-size: 30px;
@@ -78,7 +80,7 @@ h2 {font-size: 12px;
 	margin: 10px;
 }
 
-p {margin:0px 0px 12px 0px;
+p {margin-bottom:12px;
 }
 
 
