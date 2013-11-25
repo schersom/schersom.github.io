@@ -87,25 +87,31 @@ html[xmlns] .clearfix { display: block; }
 
 body {
 	font-family:Georgia;
-	line-height: 1.25;
+	line-height: 1.5em;
 	margin:0 auto;
-	width:100%;
 	display:block;
 }
 
 header {
-	position:relative;
-	height: 150px;
-	margin:0 auto;
+	position: relative;
+	top: 3%;
+	height: 155px;
+	text-align: center;
+	width: 100%;
 }
 
-#site-logo{
-	font-family: 'league_gothicregular';
-	font-size: 7em;
-	position:absolute;
-	top:3%;
-	width:100%;
+#logo{
+	float:left;
+	margin: 0% auto;
+}
 
+h1 {
+	float: left;
+	font-family: 'league_gothicregular', sans-serif, bold;
+	font-size: 7em;
+	line-height: 1em;
+	text-transform: uppercase;
+	text-align: center;
 
 	/*
 	background:url(images/dogvscat-logo.gif) no-repeat top center; 
@@ -113,19 +119,35 @@ header {
  	*/
 }
 
-	#site-logo a{
+#vs {
+	float: left;
+	color: gray;
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 4em;
+	line-height: 1em;
+	margin-top: .3em;
+	margin-left: .3em;
+	margin-right: .3em;
+	border-top: solid .07em gray;
+	border-bottom: solid .07em gray;
+}
+
+	#logo a{
  		display:block;  
  		width:600px; 
 		height:100px;  
+		margin:0 auto;
 	}
 
 #nav {
 	position:absolute;
 	top:150px;
-	border-top: 3px solid black;
-	border-bottom: 3px solid black;
+	border-top: .25em solid black;
+	border-bottom: .25em solid black;
 	width:100%;
-	height:20px;
+	height:1.25em;
 }
 
 	ul {
@@ -134,7 +156,7 @@ header {
 
 	li {display:inline-block;
 		text-transform: uppercase;
-		margin:0px 10px 10px 10px;
+		margin:0em .75em .75em .75em;
 	}
 
 	a {text-decoration:none;
@@ -143,7 +165,7 @@ header {
 	}
 
 hr {border:none;
-	height: 3px;
+	height: .25em;
 	background-color: black;
 	width:100%;
 }
@@ -169,12 +191,12 @@ article {
  	}
 
 	h3 {font-weight: bold;
-		font-size: 14pt
+		font-size: 1.5em
 	}
 
 	p {	float: left;
 		width: 100%;
-		font-size: 12pt;
+		font-size: 1em;
 	}
 
 footer {
@@ -200,3 +222,35 @@ footer a {
  		text-transform: lowercase;
  		text-align: right;
  	}
+
+
+@media screen and (max-width:655px) {
+	header{
+		height:170px;
+	}
+	article {
+		float:none; 
+		width:95%; 
+		margin-top: 5%;
+	}
+}
+
+@media screen and (max-width:635px) {
+	article{
+		margin-top: 12%;
+	}
+	#nav {
+		line-height:1em;
+		padding-top:.2em;
+		height: 3em;
+	}
+	}
+
+@media screen and (max-width:450px) {
+	h1 {font-size:4.5em;}
+	#vs {font-size:2.5em;}
+	header{height:100px;}
+	#nav{top:75px;
+		font-size: .75em;
+	}
+}
