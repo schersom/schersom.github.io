@@ -94,7 +94,6 @@ body {
 
 header {
 	position: relative;
-	top: 3%;
 	height: 155px;
 	text-align: center;
 	width: 100%;
@@ -102,7 +101,7 @@ header {
 
 #logo{
 	float:left;
-	margin: 0% auto;
+	margin-top:1em;
 }
 
 h1 {
@@ -236,8 +235,11 @@ footer a {
 }
 
 @media screen and (max-width:635px) {
-	article{
-		margin-top: 12%;
+	#dog{
+		margin-top: 10%;
+	}
+	#cat{
+		margin-top:35%;
 	}
 	#nav {
 		line-height:1em;
@@ -247,10 +249,17 @@ footer a {
 	}
 
 @media screen and (max-width:450px) {
-	h1 {font-size:4.5em;}
-	#vs {font-size:2.5em;}
+	h1 {font-size:4.5em; line-height:.75em;}
+	#vs {font-size:2.5em; line-height:1em; margin-top:.03em;}
 	header{height:100px;}
 	#nav{top:75px;
 		font-size: .75em;
 	}
+	h3{font-size:1em;}
+	p{font-size:.75em; line-height: 1.5em;}
+	#dog{margin-top: 10%;}
+	#cat{margin-top:50%;}
+	.footL{float:none;}
+	.footR{float:none;}
+	hr{height:.15em;}
 }
