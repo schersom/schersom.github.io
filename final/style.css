@@ -117,10 +117,6 @@ table {
 		padding:none;
 	}
 
-	#intro {
-		padding-top:100px;
-	}
-
 #work {
 	height:5em;
 	background-color:Gray;
@@ -142,7 +138,7 @@ table {
 		position:absolute;
 		width: 40%;
 		left: 16em;
-		top: 3em;
+		top: 2em;
 	}
 
 body { font-family: 'fira_sans_otregular'; 
