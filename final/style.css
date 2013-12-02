@@ -82,6 +82,69 @@ table {
     font-style: normal;
 }
 
+#site-wrapper {
+	position:relative;
+	height:42em;
+	background-color:YellowGreen;
+}
+
+#site-header {
+	margin:0, auto;
+	text-align: center;
+}
+
+	#site-header h1 p{
+	vertical-align: center;
+	}
+
+#top-nav{
+	margin:0, auto;
+	width: 225px;
+	background:white;
+	padding-top:.35em;
+	padding-bottom:.25em;
+	border-radius:7px;
+}
+
+	#top-nav a{
+	border-right:2px solid YellowGreen;
+	padding-left:.65em;
+	padding-right: .75em;
+	}
+
+	#top-nav a:last-child{
+		border:none;
+		padding:none;
+	}
+
+	#intro {
+		padding-top:100px;
+	}
+
+#work {
+	height:5em;
+	background-color:Gray;
+}
+
+#about-wrapper{
+	position:relative;
+	height:300px;
+}	
+
+	#photo {
+		position:absolute;
+		width:10%;
+		left:13em;
+		top: 3em;
+	}
+
+	#about {
+		position:absolute;
+		width: 40%;
+		left: 16em;
+		top: 3em;
+	}
+
 body { font-family: 'fira_sans_otregular'; 
 	font-size:1em; 
 	width:100%;
@@ -92,18 +155,25 @@ a {text-decoration:none;
 
 h1 { font-family: 'leckerlioneregular'; 
 	font-size:3em; 
-	color:Silver;  }
+	color:White;  }
 
 h2 { font-family: 'leckerlioneregular'; 
 	font-size:1.5em; 
+	line-height: .5em;
 	color:YellowGreen;  }
 
 header p { font-size:1em; 
 	padding-top:10px;  
-	color:Silver;}
+	color:White;}
 
-p { font-size:1em; 
+p { font-size:1em;
+	line-height: 1.25em; 
 	padding-top:10px;  
 	color:Gray;}
 
 em { font-family: 'fira_sans_otbold';}
+
+ul li {
+	float:left;
+	margin:1em;
+}
