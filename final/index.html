@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Samantha Hersom's Portfolio</title>
+	<title>Samantha Hersom</title>
   	<!--[if lt IE 9]>
   	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   	<![endif]-->
   	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 </head>
+
 <body>
 <div id='site-wrapper'>
 <header id='site-header'>
 	<nav id='top-nav'>
 		<a href='#'>work</a>
 		<a href='#about'>contact</a>
-		<a href='#'>r&eacute;sum&eacute;</a>
+		<a href='images/resume.pdf' target="_blank">r&eacute;sum&eacute;</a>
 	</nav>
 	<h1>Hello!</h1>
-	<p>I'm <em>Samantha Hersom</em>, a Graphic Designer from Edgecomb, Maine.</p>
+	<p>I'm <em>Samantha Hersom</em>, a Graphic Designer from Edgecomb, Maine.
+	</p>
+
 </header>
 </div>
-<div id= 'work'>
-	<ul>
-		<li><img alt='project1' src='#'/></li>
-		<li><img alt='project2' src='#'/></li>
-		<li><img alt='project3' src='#'/></li>
-		<li><img alt='project4' src='#'/></li>
-		<li><img alt='project5' src='#'/></li>
-	</ul>
-</div>
-<div a id='about-wrapper'>
+
+<section id= 'work'>
+	<div id="project">
+		<img src ="images/p1/icon1.png">
+		<img class="hide" src ="images/p1/howslife1.png">
+		<img class="hide" src = "images/p1/howslife2.png">
+		<img class="hide" src = "images/p1/howslife3.png">
+	</div>
+	<div id="project">
+		<img src ="images/p2/cover1.jpg">
+		<img class="hide" src="images/p2/pg1.jpg">
+		<img class="hide" src="images/p2/content.jpg">
+	</div>
+	<div id="project">
+		<img src ="images/p3/logo.png">
+		<img class="hide" src = "images/p3/print2.jpg">
+		<img class="hide" src = "images/p3/web.jpg">
+	</div>
+	<div id="project">
+		<img src ="#">
+		<img class="hide" src ="#">
+		<img class="hide" src ="#">
+	</div>
+	<div id="project">
+		<img src ="#">
+		<img class="hide" src ="#">
+		<img class="hide" src ="#">
+	</div>
+
+</section>
+
+<div id='about-wrapper'>
 	<section id='photo'>
 		<img alt='me' src='#'/>
 	</section>
 	<section id='about'>
 		<h2>About me</h2>
-		<p>Here's some filler text talking about who I am, what I do, what I'm interested in, and all that jazz. It's only going to be a couple of lines.</p>
+		<p>Here's a little blurb about me and what I like to do and so on. It's only going to be a couple of lines.</p>
 		<br>
 		<h2>Contact</h2>
 		<p>207.689.8317 &middot; <a href="#">schersom@massart.edu</a></p>
@@ -43,17 +72,25 @@
 		<p>download my <a href='#'>r&eacute;sum&eacute;</a>.</p>
 	</section>
 </div>
-</a>
+
 <div id='footer-wrapper'>
-	<footer id='site-footer'>
+	<footer id='footer-left'>
 		<ul>
-			<li><img alt='facebook' src='images/icons/fb.png'/></li>
-			<li><img alt='linkedin' src='images/icons/Lin.png'/></li>
-			<li><img alt='behance' src='images/icons/Behance-Logo-01.png'/></li>
-			<li><img alt='youtube' src='images/icons/youtube-01.png'/></li>
-			<li><img alt='etsy' src='images/icons/etsy-01.png'/></li>
+			<li><a href="http://www.linkedin.com/profile/view?id=219509950"><img alt='linkedin' src='images/icons/Lin.png'/></a></li>
+			<li><a href="http://behance.net/schersom" target="_blank"><img alt='behance' src='images/icons/Behance-Logo-01.png'/></a></li>
+			<li><a href="#"><img alt='youtube' src='images/icons/youtube-01.png'/></a></li>
+			<li><a href="#"><img alt='etsy' src='images/icons/etsy-01.png'/></a></li>
+			<li><a href="https://www.facebook.com/samantha.hersom"><img alt='facebook' src='images/icons/fb.png'/></a></li>
 		</ul>
 	</footer>
+	<footer id='footer-right'>
+		<p>Copyright &copy; Samantha Hersom 2013</p>
 </div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
 </body>
 </html>
