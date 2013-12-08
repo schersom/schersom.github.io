@@ -6,15 +6,49 @@
   	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   	<![endif]-->
   	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+  	<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+
+<script>
+$(function() {
+    $('top-nav li').bind('click',function(event){
+        var $anchor = $(this);
+ 
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500,'easeInOutExpo');
+        /*
+        if you don't want to use the easing effects:
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000);
+        */
+        event.preventDefault();
+    });
+});
+</script>
+
 </head>
 
 <body>
 <div id='site-wrapper'>
 <header id='site-header'>
 	<nav id='top-nav'>
-		<a href='#work'>work</a>
-		<a href='#about-wrapper'>contact</a>
-		<a href='images/resume.pdf' target="_blank">r&eacute;sum&eacute;</a>
+		<ul>
+			<li><a href='#work'>work</a></li>
+			<li><a href='#about-wrapper'>contact</a></li>
+			<li><a href='images/resume.pdf' target="_blank">r&eacute;sum&eacute;</a></li>
+		</ul>
 	</nav>
 	<h1>Hello!</h1>
 	<p>I'm <em>Samantha Hersom</em>, a Graphic Designer from Edgecomb, Maine.
@@ -87,12 +121,6 @@
 	<footer id='footer-right'>
 		<p>Copyright &copy; Samantha Hersom 2013</p>
 </div>
-
-<script type="text/javascript">
-	$(document).ready(function() {
-		$(".fancybox").fancybox();
-	});
-</script>
 
 </body>
 </html>
