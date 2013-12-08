@@ -6,6 +6,10 @@
   	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   	<![endif]-->
   	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="Website Horizontal Scrolling with jQuery" />
+    <meta name="keywords" content="jquery, horizontal, scrolling, scroll, smooth"/>
+    <script type="text/javascript"/>
 
 <!-- Add jQuery library -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -16,45 +20,50 @@
 <div id='site-wrapper'>
 <header id='site-header'>
 	<nav id='top-nav'>
-		<a href='#'>work</a>
-		<a href='#about'>contact</a>
+		<a href='#work'>work</a>
+		<a href='#about-wrapper'>contact</a>
 		<a href='images/resume.pdf' target="_blank">r&eacute;sum&eacute;</a>
 	</nav>
 	<h1>Hello!</h1>
 	<p>I'm <em>Samantha Hersom</em>, a Graphic Designer from Edgecomb, Maine.
 	</p>
-
 </header>
 </div>
 
 <section id= 'work'>
-	<div id="project">
-		<img src ="images/p1/icon1.png">
-		<img class="hide" src ="images/p1/howslife1.png">
+	<div id="project1">
+		<img src ="images/p1/howslife_previewbw.jpg">
+		<img class="hide" src = "images/p1/howslife1.png">
 		<img class="hide" src = "images/p1/howslife2.png">
 		<img class="hide" src = "images/p1/howslife3.png">
 	</div>
-	<div id="project">
-		<img src ="images/p2/cover1.jpg">
+	<div id="project2">
+		<img src ="images/p2/ipadtoc_bw.jpg">
 		<img class="hide" src="images/p2/pg1.jpg">
 		<img class="hide" src="images/p2/content.jpg">
 	</div>
-	<div id="project">
-		<img src ="images/p3/logo.png">
+	<div id="project3">
+		<img src = "images/p3/webbw.jpg">
+		<img class="hide" src = "images/p3/logos.jpg">
 		<img class="hide" src = "images/p3/print2.jpg">
-		<img class="hide" src = "images/p3/web.jpg">
 	</div>
-	<div id="project">
-		<img src ="#">
-		<img class="hide" src ="#">
-		<img class="hide" src ="#">
+	<div id="project4">
+		<img src ="images/p4/INSTALLATIONbw.jpg">
+		<img class="hide" src ="images/p4/map.jpg">
+		<img class="hide" src ="images/p4/massartlib.jpg">
 	</div>
-	<div id="project">
-		<img src ="#">
-		<img class="hide" src ="#">
-		<img class="hide" src ="#">
+	<div id="project5">
+		<img src ="images/p5/campaigns_previewbw.jpg">
+		<img class="hide" src = "images/p5/dushen.jpg">
+		<img class="hide" src = "images/p5/sam.jpg">
+		<img class="hide" src = "images/p5/stats.jpg">
 	</div>
-
+	<div id="project6">
+		<img src ="images/p6/home_previewbw.jpg">
+		<img class="hide" src ="images/p6/action.jpg">
+		<img class="hide" src ="images/p6/inception.jpg">
+		<img class="hide" src ="images/p6/compare.jpg">
+	</div>
 </section>
 
 <div id='about-wrapper'>
@@ -92,5 +101,27 @@
 		$(".fancybox").fancybox();
 	});
 </script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+        <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#top-nav a').bind('click',function(event){
+                    var $anchor = $(this);
+                    /*
+                    if you want to use one of the easing effects:
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1500,'easeInOutExpo');
+                     */
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1000);
+                    event.preventDefault();
+                });
+            });
+        </script>
+
+
 </body>
 </html>

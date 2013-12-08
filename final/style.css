@@ -117,8 +117,8 @@ ul li {
 
 #site-wrapper {
 	position:relative;
-	height:42em;
-	background-image:url("images/backyard.jpg");
+	height:49em;
+	background-image:url("images/backyard2.jpg");
 }
 
 
@@ -126,7 +126,7 @@ ul li {
 	margin:0, auto;
 	text-align: center;
 	background-color: rgba(154,205,50,.4);
-	height:42em;
+	height:49em;
 }
 
 #top-nav{
@@ -152,27 +152,68 @@ ul li {
 	}
 
 #work {
-	height:6.7em;
+	position:relative;
+	height:49em;
 	background-color:Gray;
+}
+
+	#project1 {
+		position: absolute;
+		top:7em;
+		left:16em;
+	}
+
+	#project2{
+		position: absolute;
+		top:7em;
+		left:35em;
+	}
+
+	#project3{
+		position: absolute;
+		top:7em;
+		left:54em;
+	}
+
+	#project4{
+		position: absolute;
+		top:21em;
+		left:16em;
+	}
+
+	#project5{
+		position: absolute;
+		top:21em;
+		left:35em;
+	}
+
+	#project6{
+		position: absolute;
+		top:21em;
+		left:54em;
+	}
+
+.hide {
+	display:none;
 }
 
 #about-wrapper{
 	position:relative;
-	height:45em;
+	height:44.7em;
 }	
 
 	#photo {
 		position:absolute;
 		width:10%;
 		left:13em;
-		top: 3em;
+		top: 7em;
 	}
 
 	#about {
 		position:absolute;
 		width: 40%;
 		left: 16em;
-		top: 2em;
+		top: 5em;
 	}
 
 footer p {
