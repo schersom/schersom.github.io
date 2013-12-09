@@ -173,9 +173,13 @@ ul li {
 		left:16em;
 	}
 
-		#project1:hover {
+		#work img{
 			background-color:red;
-			background-image:"images/p1/howslife_preview.jpg";
+			opacity:.4;
+		}
+
+		#work img:hover{
+			opacity:1;
 		}
 
 	#project2{
