@@ -99,6 +99,10 @@ h2 { font-family: 'leckerlioneregular';
 	line-height: .5em;
 	color:YellowGreen;  }
 
+header h1 {
+	padding-top:5.5em;
+}
+
 header p { font-size:1em; 
 	padding-top:10px;  
 	color:White;}
@@ -130,26 +134,26 @@ ul li {
 }
 
 #top-nav{
-	display: inline-block;
-	width: 225px;
-	background:white;
-	padding-top:.35em;
-	padding-bottom:.25em;
-	border-radius:7px;
-	margin-top:1.5em;
-	margin-bottom:15em;
+        display: inline-block;
+        width: 225px;
+        background:white;
+        padding-top:.35em;
+        padding-bottom:.25em;
+        border-radius:7px;
+        margin-top:1.5em;
+        margin-bottom:15em;
 }
 
-	#top-nav a{
-	border-right:2px solid YellowGreen;
-	padding-left:.65em;
-	padding-right: .75em;
-	}
+    #top-nav a{
+        border-right:2px solid YellowGreen;
+        padding-left:.65em;
+        padding-right: .75em;
+    }
 
-	#top-nav a:last-child{
-		border:none;
-		padding:none;
-	}
+    #top-nav a:last-child{
+        border:none;
+        padding:none;
+    }
 
 #work {
 	position:relative;
@@ -205,15 +209,15 @@ ul li {
 	#photo {
 		position:absolute;
 		width:10%;
-		left:13em;
-		top: 7em;
+		left:16em;
+		top: 6.55em;
 	}
 
 	#about {
 		position:absolute;
 		width: 40%;
-		left: 16em;
-		top: 5em;
+		left: 35em;
+		top: 7em;
 	}
 
 footer p {
