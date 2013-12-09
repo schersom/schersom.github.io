@@ -91,7 +91,7 @@ a {text-decoration:none;
 	color:YellowGreen}
 
 h1 { font-family: 'leckerlioneregular'; 
-	font-size:3em; 
+	font-size:5em; 
 	color:White; 
 	padding-top:250px; 
 }
@@ -101,8 +101,8 @@ h2 { font-family: 'leckerlioneregular';
 	line-height: .5em;
 	color:YellowGreen;  }
 
-header p { font-size:1em; 
-	padding-top:1em;  
+header p { font-size:2em; 
+	padding-top:.5em;  
 	color:White;}
 
 p { font-size:1em;
@@ -140,7 +140,7 @@ ul li {
         border-radius:7px;
         margin-top:1.5em;
         margin-bottom:15em;
-        margin-left:-10%;
+        margin-left:-7.5%;
 }
 
     #top-nav li{
